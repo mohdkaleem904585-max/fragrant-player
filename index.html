@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zalvén - Premium Clothing</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #0b0b0b;
+    color: white;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background: rgba(0,0,0,0.8);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.menu a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    height: 90vh;
+    background: url('https://images.unsplash.com/photo-1520975922203-b6b1d8b0f5d5?w=1600') center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 50px;
+}
+
+.hero p {
+    margin: 10px 0;
+}
+
+.btn {
+    background: white;
+    color: black;
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Products */
+.products {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.product {
+    background: #1a1a1a;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.product img {
+    width: 100%;
+}
+
+.product h3 {
+    padding: 10px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+    <div class="logo">ZALVÉN</div>
+    <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">Contact</a>
+    </div>
+</div>
+
+<!-- Hero -->
+<section class="hero">
+    <div>
+        <h1>Luxury Streetwear</h1>
+        <p>Wear Confidence. Wear Zalvén.</p>
+        <a href="#" class="btn">Shop Now</a>
+    </div>
+</section>
+
+<!-- Products -->
+<section class="products">
+    <h2>Featured Collection</h2>
+
+    <div class="product-grid">
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=500">
+            <h3>Black Hoodie</h3>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=500">
+            <h3>Premium Jacket</h3>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=500">
+            <h3>Casual T-Shirt</h3>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<div class="footer">
+    © 2026 Zalvén Clothing. All Rights Reserved.
+</div>
+
+</body>
+</html>
